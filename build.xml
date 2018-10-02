@@ -12,7 +12,7 @@
       <mkdir dir="report"/>
    </target>
    <target name="compile" depends="init">
-      <javac fork="yes" executable="/usr/lib/jvm/java-8-openjdk-amd64/" srcdir="src" destdir="bin" includeantruntime="false">
+      <javac srcdir="src" destdir="bin" includeantruntime="false">
          <classpath refid="class.path"/>
       </javac>
       <javac srcdir="test" destdir="bin" includeantruntime="false">
